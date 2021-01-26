@@ -4,7 +4,6 @@ const cardSuits = [`<i class="bi bi-suit-club-fill"></i>`,`<i class="bi bi-suit-
 const icon1 = document.querySelector("#icon1-paragraph")
 const icon2 = document.querySelector("#icon2-paragraph")
 const number = document.querySelector("#number-paragraph")
-const button = document.querySelector("#button")
 
 const getRandom = (array) => {
     const rand = Math.floor((Math.random() * array.length))
@@ -20,5 +19,6 @@ const randomCard  = () => {
     icon2.innerHTML = suit
 }
 
-button.addEventListener("click", randomCard)
-
+window.onload(
+setInterval(randomCard, 1000)
+)
