@@ -25,6 +25,13 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 20vh;
+  flex-direction: column;
+  color: #31393c;
+  font-weight: bold;
+}
+
+#button {
+  margin: 2vh;
 }
 
 #main {
@@ -38,10 +45,10 @@ body {
   width: 45vh;
   height: 75vh;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 3vh;
 }
 
-#icon1 {
+#icon1-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,16 +59,36 @@ body {
   left: 10%;
 }
 
-#icon2 {
+#icon2-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 5vh;
   height: 5vh;
   position: relative;
-  top: 80%;
-  left: 79%;
+  top: 75%;
+  left: 80%;
 }
-p {
+
+#number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+  top: 40%;
+  left: 46%;
+}
+
+#icon1-paragraph {
+  font-size: 8vh;
+}
+
+#icon2-paragraph {
+  font-size: 8vh;
+}
+
+#number-paragraph {
   font-size: 8vh;
 }
